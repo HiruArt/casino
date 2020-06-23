@@ -1,0 +1,18 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Home page";
+  - var pageClass = "homepage loadpage";
+  - var pageActive = "homepage";
+
+block content
+  //.webp-img(data-webp="./img/Rectangle5.webp" data-img="./img/Rectangle5.jpg")
+
+    <picture>
+      <source srcset="./img/awesomeWebPImage.webp" type="image/webp">
+      <source srcset="./img/creakyOldJPEG.jpg" type="image/jpeg">
+      <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Alt Text!">
+    </picture>
+
+  div.main-wrap
+
