@@ -1,0 +1,367 @@
+extends _layout
+
+block vars
+  - var pageTitle = "Home page";
+  - var pageClass = "homepage loadpage";
+  - var pageActive = "homepage";
+
+block content
+  div.main-wrap
+    .breadcrumbs
+      .breadcrumbs__inner
+        a(href="/").breadcrumbs__link Главная
+        a(href="#").breadcrumbs__link Бездепозитные бонусы
+        a(href="javascript:void(0);").breadcrumbs__link Fast Pay Casino
+
+    .bonuses
+      .bonuses__inner
+        .bonuses__list
+          .bonuses__item
+            .bonuses__numb
+              span 1
+            .bonuses__name
+              .bonuses__raiting-ico
+                img(src="./img/ico/rating-ico.svg" alt="ico" width="39" height="30").bonuses__raiting-ico
+              .bonuses__raiting-txt 9.5/10
+
+              .bonuses__name-img
+                picture
+                  source(srcset="./img/fastpay-logo.webp" type="image/webp")
+                  source(srcset="./img/fastpay-logo.png" type="image/png")
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="200" height="46" alt="logo").bonuses__name-img-i
+              .bonuses__name-btn
+                .bonuses__btn-item
+                  a(href="#").bonuses__btn-link.site-btn.site-btn-g
+                    span Получить бонус
+
+            .bonuses__table
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Год основания
+                .bonuses__col.bonuses__col-description 2014
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Кол-во игр
+                .bonuses__col.bonuses__col-description 370+
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Всего голосов
+                .bonuses__col.bonuses__col-description 29
+                  .stars
+                    img(src="./img/ico/stars.svg" width="14" alt="star").stars-i
+                    img(src="./img/ico/stars.svg" width="14" alt="star").stars-i
+                    img(src="./img/ico/stars.svg" width="14" alt="star").stars-i
+                    img(src="./img/ico/stars.svg" width="14" alt="star").stars-i
+                    img(src="./img/ico/stars.svg" width="14" alt="star").stars-i
+                  span.vote 50 голосов
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Вейджер
+                .bonuses__col.bonuses__col-description x55
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Сумма отыгрыша
+                .bonuses__col.bonuses__col-description 55 000 грн
+
+            .bonuses__bunner
+              .bonuses__bunner-top
+                .bonuses__bunner-top-txt БОНУСЫ КАЗИНО КЛУБА fastpay
+              .bonuses__bunner-img
+                picture
+                  source(srcset="./img/bunner.webp" type="image/webp")
+                  source(srcset="./img/bunner.png" type="image/png")
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="bunner").bonuses__bunner-img-i
+
+        p Казино Риобет ведет свою историю с 2014 года. На деятельность казино Риобет имеется лицензия, главный офис учреждения находится в Ирландии. Казино посещают в свободное время игроки из различных стран, сюда относятся страны СНГ, Швеции и Финляндии.
+
+    .features
+      .features__inner
+        h2 Особенности казино Fast Pay
+        .features__table
+          .features__row
+            .features__name
+              img(src="./img/ico/user.svg" alt="img" width="20").features__ico
+              | Принимает игроков с
+            .features__description
+              img(src="./img/ico/germany.svg" width="21" height="21" alt="country flag").country-ico
+              img(src="./img/ico/china.svg"  width="21" height="21" alt="country flag").country-ico
+              img(src="./img/ico/russia.svg"  width="21" height="21" alt="country flag").country-ico
+              img(src="./img/ico/mexico.svg"  width="21" height="21" alt="country flag").country-ico
+              img(src="./img/ico/usa-today.svg"  width="21" height="21" alt="country flag").country-ico
+              img(src="./img/ico/thailand.svg"  width="21" height="21" alt="country flag").country-ico
+          .features__row
+            .features__name
+              img(src="./img/ico/platform.svg" alt="img" width="20").features__ico
+              | Платформы
+            .features__description
+              picture
+                source(srcset="./img/platform01.webp" type="image/webp")
+                source(srcset="./img/platform01.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="platform").platform-ico
+              picture
+                source(srcset="./img/platform02.webp" type="image/webp")
+                source(srcset="./img/platform02.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="platform").platform-ico
+              picture
+                source(srcset="./img/platform03.webp" type="image/webp")
+                source(srcset="./img/platform03.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="platform").platform-ico
+              picture
+                source(srcset="./img/platform04.webp" type="image/webp")
+                source(srcset="./img/platform04.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="platform").platform-ico
+              picture
+                source(srcset="./img/platform05.webp" type="image/webp")
+                source(srcset="./img/platform05.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="platform").platform-ico
+              picture
+                source(srcset="./img/platform06.webp" type="image/webp")
+                source(srcset="./img/platform06.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="platform").platform-ico
+          .features__row
+            .features__name
+              img(src="./img/ico/bonus.svg" alt="img" width="20").features__ico
+              | Бонусы
+            .features__description Бонус Приветствие / 100% на первый депозит / 50% на второй депозит / VIP бонус
+          .features__row
+            .features__name
+              img(src="./img/ico/money.svg" alt="img" width="20").features__ico
+              | Валюты
+            .features__description Гривны / Рубли / Доллары / Евро
+          .features__row
+            .features__name
+              img(src="./img/ico/min1.svg" alt="img" width="20").features__ico
+              | Мин. депозит
+            .features__description 50 UAH / 100 RUB / 5 USD
+          .features__row
+            .features__name
+              img(src="./img/ico/min2.svg" alt="img" width="20").features__ico
+              | Мин. выплата
+            .features__description 50 UAH / 100 RUB / 5 USD
+          .features__row
+            .features__name
+              img(src="./img/ico/clock.svg" alt="img" width="20").features__ico
+              | Сроки вывода
+            .features__description Мгновенно
+          .features__row
+            .features__name
+              img(src="./img/ico/hardware.svg" alt="img" width="20").features__ico
+              | Технологии
+            .features__description
+              picture
+                source(srcset="./img/tech01.webp" type="image/webp")
+                source(srcset="./img/tech01.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="tech").tech-ico
+              picture
+                source(srcset="./img/tech02.webp" type="image/webp")
+                source(srcset="./img/tech02.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="tech").tech-ico
+          .features__row
+            .features__name
+              img(src="./img/ico/pay.svg" alt="img" width="20").features__ico
+              | Методы оплаты
+            .features__description
+              picture
+                source(srcset="./img/cart01.webp" type="image/webp")
+                source(srcset="./img/cart01.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart02.webp" type="image/webp")
+                source(srcset="./img/cart02.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart03.webp" type="image/webp")
+                source(srcset="./img/cart03.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart04.webp" type="image/webp")
+                source(srcset="./img/cart04.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart05.webp" type="image/webp")
+                source(srcset="./img/cart05.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart06.webp" type="image/webp")
+                source(srcset="./img/cart06.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart07.webp" type="image/webp")
+                source(srcset="./img/cart07.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart08.webp" type="image/webp")
+                source(srcset="./img/cart08.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart09.webp" type="image/webp")
+                source(srcset="./img/cart09.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart10.webp" type="image/webp")
+                source(srcset="./img/cart10.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart11.webp" type="image/webp")
+                source(srcset="./img/cart11.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart12.webp" type="image/webp")
+                source(srcset="./img/cart12.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+          .features__row
+            .features__name
+              img(src="./img/ico/pay.svg" alt="img" width="20").features__ico
+              | Методы выплат
+            .features__description
+              picture
+                source(srcset="./img/cart01.webp" type="image/webp")
+                source(srcset="./img/cart01.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart02.webp" type="image/webp")
+                source(srcset="./img/cart02.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart03.webp" type="image/webp")
+                source(srcset="./img/cart03.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart04.webp" type="image/webp")
+                source(srcset="./img/cart04.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart05.webp" type="image/webp")
+                source(srcset="./img/cart05.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart06.webp" type="image/webp")
+                source(srcset="./img/cart06.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart07.webp" type="image/webp")
+                source(srcset="./img/cart07.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart08.webp" type="image/webp")
+                source(srcset="./img/cart08.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart09.webp" type="image/webp")
+                source(srcset="./img/cart09.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart10.webp" type="image/webp")
+                source(srcset="./img/cart10.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart11.webp" type="image/webp")
+                source(srcset="./img/cart11.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+              picture
+                source(srcset="./img/cart12.webp" type="image/webp")
+                source(srcset="./img/cart12.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="36" height="23" alt="cart").cart-ico
+          .features__row
+            .features__name
+              img(src="./img/ico/language.svg" alt="img" width="20").features__ico
+              | Язык интерфейса
+            .features__description Русский / Английский / Испанский / Турецкий / Шведский
+          .features__row
+            .features__name
+              img(src="./img/ico/contract .svg" alt="img" width="20").features__ico
+              | Лицензия
+            .features__description License: Riotech N.V. 2015-010
+          .features__row
+            .features__name
+              img(src="./img/ico/mail.svg" alt="img" width="20").features__ico
+              | E-mail
+            .features__description support@riobet.com
+          .features__row
+            .features__name
+              img(src="./img/ico/phone-call.svg" alt="img" width="20").features__ico
+              | Телефон
+            .features__description +356 355 000 65
+          .features__row
+            .features__name
+              img(src="./img/ico/support.svg" alt="img" width="20").features__ico
+              | Поддержка
+            .features__description Чат, телефон, почта
+
+    .txt-block
+      .txt-block__inner
+        h2
+          img(src="./img/ico/bonus.svg" width="20" alt="ico")
+          | Бонусы Fast Pay
+        p Казино Риобет подготовило для своих клиентов множество приятных бонусов:
+        picture
+          source(srcset="./img/img01.webp" type="image/webp")
+          source(srcset="./img/img01.png" type="image/png")
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img")
+        picture
+          source(srcset="./img/img02.webp" type="image/webp")
+          source(srcset="./img/img02.png" type="image/png")
+          img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img")
+        p Бонус «Приветствие» для ставок на виртуальный спорт. Указанный бонус предоставляется на первичный депозит.
+          br
+          | Вейджер — х18. Действует на те спортивные ставки, с которых получится заработать до 100$ при условии наличия на счету средств (более 10$).
+          br
+          | Бонус необходимо отыгрывать ставками на спорт с коэффициентом равному 1,5 и выше.
+          br
+          | 100% на первый депозит — это предложение гарантирует получение сумму, которая равна первичному депозиту. Для пользования данным бонусом нужно при первом пополнении лицевого счёта активировать промокод PLUS100.
+          br
+          | 50% на второй депозит. При пополнение счета второй раз, необходимо ввести промокод PLUS50 и получить 50% от суммы уже внесенного депозита.
+          br
+          | Бонус за еженедельное пополнение депозита. Данный бонус рассчитывается в размере 40% от внесенной суммы на счет. Промокод PLUS40.
+          br
+          | Бонус в честь Дня Рождения. Такой бонус будет рассчитан в индивидуальном порядке и выдан для реализации лишь верифицированным игрокам.
+          br
+          | Расчёт бонусных процентов зависит от пополнений счета и выводов средств, а также напоминает собой работу cash-кошелька.
+          br
+          | VIP бонус. Это еженедельный бонус, который прибавляет 100% к текущему балансу для игроков со статусом VIP. Промокод VIP100.
+        h2
+          img(src="./img/ico/min1.svg" width="20" alt="ico")
+          | Депозиты и вывод средств
+        p В казино Риобет есть возможность открыть счет в долларах, рублях, гривнах, биткойнах, евро. Валюты можно переключать в личном кабинете, в разделе «Финансы». Минимальный депозит — 10 долларов, 500 рублей, 10 евро. Существуют лимиты на вывод средств в сутки и в месяц, зависят они от статуса играющего. Так, VIP игрок может выводить в месяц до 3 млн. рублей. Выплаты производятся в течение суток, это может занимать от минуты до 24 часов с момента подачи заявки.
+        h2
+          img(src="./img/ico/pay.svg" alt="ico")
+          | Платежные систем
+        p Казино работает с платежными системами предложенными банками (Visa / MasterCard), криптовалютами (Bitcoin) и электронными системами WebMoney, Яндекс.Деньги, QIWI, NETELLER, Skrill, Payeer.
+        h2
+          img(src="/img/ico/vip.svg" width="15" alt="ico")
+          | Лояльность и VIP
+        p В казино установлены Gold и VIP статусы игроков. Gold-статус присваивается игроку, совершившему депозитов как минимум на 1000 $. В данном статусе есть возможность получить бесплатный вход почти на все игровые турниры. VIP-статус увеличивает лимиты на вывод денег в три раза, а также присутствует возврат 10% проигранных средств за месяц. Во всех турнирах можно участвовать бесплатно. Для получения VIP-статуса, общая сумма всех депозитов должна превышать 10 000 $.
+        h2
+          img(src="" alt="ico")
+          | Игры
+        p Основой азартных игр являются игровые автоматы, они удобным образом распределены по жанрам, популярности, новизне появления в казино.
+        h2
+          img(src="./img/ico/platform.svg" width="20" alt="ico")
+          | Провайдеры
+        p Казино Риобет сотрудничает с такими провайдерами: NetEnt, BetSoft, Microgaming, Ainsworth, Amatic, Evolution, Luckysrteak, Endorphina, Ezugi, Playson, Quickspin, Igrosoft, Pragmatic Play, ISoftBet, Habanero, Yggdrasil. Риобет предлагает различные виды рулетки, игру с реальными дилерами и ставки на виртуальные спортивные состязания.
+        h2
+          img(src="./img/ico/handshake.svg" width="20" alt="ico")
+          | Партнерская программа
+        p Приглашая других игроков в казино Riobet, вы получаете возможность прилично заработать на азартных увлечениях привлечённых игроков.
+          br
+          | На этом условии, партнеры могут получить до 60% от доходов казино, комиссия выплачивается на протяжении всей жизни, а также ведутся статистические данные всех начислений в режиме реального времени. Для партнеров казан Риобет предоставляются бесплатные рекламные и маркетинговые инструменты, которые могут быть необходимы для работы. Сюда могут входить баннеры, тексты промоакций и целевые страницы. Партнерская программа предусматривает субпартнерство. Что это значит? Вовлечение других партнеров, даже не играющих — окажется прибылью. 5 % от прибыли субпартнера будет приходить на ваш лицевой счёт.
+        h2
+          img(src="" alt="ico")
+          | Депозиты и вывод средств
+        p В казино Риобет есть возможность открыть счет в долларах, рублях, гривнах, биткойнах, евро. Валюты можно переключать в личном кабинете, в разделе «Финансы». Минимальный депозит — 10 долларов, 500 рублей, 10 евро. Существуют лимиты на вывод средств в сутки и в месяц, зависят они от статуса играющего. Так, VIP игрок может выводить в месяц до 3 млн. рублей. Выплаты производятся в течение суток, это может занимать от минуты до 24 часов с момента подачи заявки.
+        h2
+          img(src="" alt="ico")
+          | Поддержка
+        p При возникших вопросах по поводу игры в казино Riobet есть возможность обратиться к работникам игрового дома в режиме 24/7. Обращаться со своими вопросами можно по электронной почте, а также по телефону или в скайпе.
+        p Last Updated: 3 апреля, 2020
+
+    .horisontal-block
+      .horisontal-block__inner
+        .horisontal-block__content
+          .horisontal-block__coin.horisontal-block__coin--left
+          .horisontal-block__coin.horisontal-block__coin--right
+          .horisontal-block__title НАЧАТЬ ИГРАТЬ В ОНЛАЙН КАЗИНО fast pay casino
+          .horisontal-block__caption Используйте ссылки с нашего сайта, чтобы играть на лучших условиях
+          .horisontal-block__btn
+            .bonuses__btn-item
+              a(href="#").bonuses__btn-link.site-btn.site-btn-g
+                span Начать играть
+
+
+
+
