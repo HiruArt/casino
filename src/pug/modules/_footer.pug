@@ -1,11 +1,20 @@
 footer.footer
-  .footer__inner
-    .footer__top
+  .footer__top
+    .footer__top-inner.site-container
       a(href="/").footer__logo-link
         picture
           source(srcset="./img/Casino.webp" type="image/webp")
           source(srcset="./img/Casino.png" type="image/png")
           img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="130" height="35" alt="logo").footer__logo-img
+
+      .header__sotial.hide-desktop
+        .header__sotial-list
+          a(href="#").header__sotial-link.header__sotial--facebook
+            img(src="./img/ico/facebook.svg" width="30" alt="facebook")
+          a(href="#").header__sotial-link.header__sotial--youtube
+            img(src="./img/ico/youtube.svg" width="30" alt="youtube")
+          a(href="#").header__sotial-link.header__sotial--telegram
+            img(src="./img/ico/telegram.svg" width="30" alt="telegram")
 
       .footer__top-list
         a(href="#").footer__top-link Игры на деньги
@@ -15,7 +24,8 @@ footer.footer
         a(href="#").footer__top-link Pокс Казино
         a(href="#").footer__top-link Пин Ап Казино
 
-    .footer__bottom
+  .footer__bottom.webp-img(data-webp="./img/f-bg.webp" data-img="./img/f-bg.png")
+    .footer__bottom-inner.site-container
       .footer__copyright Рейтинг лучших онлайн казино Украины © 2020 Top-Casino.com.ua
       .footer__bottom-list
         a(href="#").footer__bottom-link
@@ -40,7 +50,8 @@ footer.footer
             img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" height="27" alt="logo").footer__bottom-img
 
 
-  .site-btn-top
+  a(href="javascript:void(0);").site-btn-top
+    img(src="./img/ico/arrow.svg" alt="ico" width="50" height="50")
 
 
 

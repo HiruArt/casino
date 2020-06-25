@@ -16,14 +16,14 @@ block content
 
   div.main-wrap
     .breadcrumbs
-      .breadcrumbs__inner
+      .breadcrumbs__inner.site-container
         a(href="/").breadcrumbs__link Главная
         a(href="javascript:void(0);").breadcrumbs__link Бездепозитные бонусы
 
 
-    .bonuses
-      .bonuses__inner
-        .bonuses__title Бездепозитные бонусы казино
+    .bonuses.webp-img(data-webp="./img/casino-bonus-bgpng.webp" data-img="./img/casino-bonus-bgpng.png")
+      .bonuses__inner.site-container
+        .bonuses__title.hide-mobile Бездепозитные бонусы казино
         .bonuses__list
           .bonuses__item
             .bonuses__numb
@@ -57,22 +57,264 @@ block content
                 .bonuses__col.bonuses__col-name Сумма отыгрыша
                 .bonuses__col.bonuses__col-description 55 000 грн
 
-            .bonuses__btn
-              .bonuses__raiting
-                .bonuses__raiting-ico
-                  img(src="./img/ico/rating-ico.svg" alt="ico" width="39" height="30").bonuses__raiting-ico
-                .bonuses__raiting-txt 9.5/10
-
+            .bonuses__btn.webp-img(data-webp="./img/coins-mini.webp" data-img="./img/coins-mini.png")
               .bonuses__btn-inner
                 .bonuses__btn-item
-                  a(href="#").bonuses__btn-link.site-btn.site-btn-w
-                    span Информация
+                  a(href="#").bonuses__btn-link.site-btn.site-btn--w
+                    span
+                      span Информация
                 .bonuses__btn-item
-                  a(href="#").bonuses__btn-link.site-btn.site-btn-g
-                    span Получить бонус
+                  a(href="#").bonuses__btn-link.site-btn.site-btn--g
+                    span
+                      span Получить бонус
 
-    .txt-block
-      .txt-block__inner
+            .bonuses__raiting
+              .bonuses__raiting-ico
+                img(src="./img/ico/rating-ico.svg" alt="ico" width="39" height="30").bonuses__raiting-ico
+              .bonuses__raiting-txt 9.5/10
+
+          .bonuses__item
+            .bonuses__numb
+              picture
+                source(srcset="./img/ico/num-ico.webp" type="image/webp")
+                source(srcset="./img/ico/num-ico.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="34" height="47" alt="logo").bonuses__name-img-i
+              span 2
+            .bonuses__name
+              .bonuses__name-img
+                picture
+                  source(srcset="./img/fastpay-logo.webp" type="image/webp")
+                  source(srcset="./img/fastpay-logo.png" type="image/png")
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="200" height="46" alt="logo").bonuses__name-img-i
+              .bonuses__name-txt Слотокинг
+
+            .bonuses__table
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Размер бонуса
+                .bonuses__col.bonuses__col-description 1000 грн
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Тип бонуса
+                .bonuses__col.bonuses__col-description бездепозитный
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Эквивалентная сумма
+                .bonuses__col.bonuses__col-description 2500 руб
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Вейджер
+                .bonuses__col.bonuses__col-description x55
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Сумма отыгрыша
+                .bonuses__col.bonuses__col-description 55 000 грн
+
+            .bonuses__btn.webp-img(data-webp="./img/coins-mini.webp" data-img="./img/coins-mini.png")
+              .bonuses__btn-inner
+                .bonuses__btn-item
+                  a(href="#").bonuses__btn-link.site-btn.site-btn--w
+                    span
+                      span Информация
+                .bonuses__btn-item
+                  a(href="#").bonuses__btn-link.site-btn.site-btn--g
+                    span
+                      span Получить бонус
+
+            .bonuses__raiting
+              .bonuses__raiting-ico
+                img(src="./img/ico/rating-ico.svg" alt="ico" width="39" height="30").bonuses__raiting-ico
+              .bonuses__raiting-txt 9.5/10
+
+          .bonuses__item
+            .bonuses__numb
+              picture
+                source(srcset="./img/ico/num-ico.webp" type="image/webp")
+                source(srcset="./img/ico/num-ico.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="34" height="47" alt="logo").bonuses__name-img-i
+              span 3
+            .bonuses__name
+              .bonuses__name-img
+                picture
+                  source(srcset="./img/fastpay-logo.webp" type="image/webp")
+                  source(srcset="./img/fastpay-logo.png" type="image/png")
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="200" height="46" alt="logo").bonuses__name-img-i
+              .bonuses__name-txt Слотокинг
+
+            .bonuses__table
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Размер бонуса
+                .bonuses__col.bonuses__col-description 1000 грн
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Тип бонуса
+                .bonuses__col.bonuses__col-description бездепозитный
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Эквивалентная сумма
+                .bonuses__col.bonuses__col-description 2500 руб
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Вейджер
+                .bonuses__col.bonuses__col-description x55
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Сумма отыгрыша
+                .bonuses__col.bonuses__col-description 55 000 грн
+
+            .bonuses__btn.webp-img(data-webp="./img/coins-mini.webp" data-img="./img/coins-mini.png")
+              .bonuses__btn-inner
+                .bonuses__btn-item
+                  a(href="#").bonuses__btn-link.site-btn.site-btn--w
+                    span
+                      span Информация
+                .bonuses__btn-item
+                  a(href="#").bonuses__btn-link.site-btn.site-btn--g
+                    span
+                      span Получить бонус
+
+            .bonuses__raiting
+              .bonuses__raiting-ico
+                img(src="./img/ico/rating-ico.svg" alt="ico" width="39" height="30").bonuses__raiting-ico
+              .bonuses__raiting-txt 9.5/10
+
+          .bonuses__item
+            .bonuses__numb
+              picture
+                source(srcset="./img/ico/num-ico.webp" type="image/webp")
+                source(srcset="./img/ico/num-ico.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="34" height="47" alt="logo").bonuses__name-img-i
+              span 4
+            .bonuses__name
+              .bonuses__name-img
+                picture
+                  source(srcset="./img/fastpay-logo.webp" type="image/webp")
+                  source(srcset="./img/fastpay-logo.png" type="image/png")
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="200" height="46" alt="logo").bonuses__name-img-i
+              .bonuses__name-txt Слотокинг
+
+            .bonuses__table
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Размер бонуса
+                .bonuses__col.bonuses__col-description 1000 грн
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Тип бонуса
+                .bonuses__col.bonuses__col-description бездепозитный
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Эквивалентная сумма
+                .bonuses__col.bonuses__col-description 2500 руб
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Вейджер
+                .bonuses__col.bonuses__col-description x55
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Сумма отыгрыша
+                .bonuses__col.bonuses__col-description 55 000 грн
+
+            .bonuses__btn.webp-img(data-webp="./img/coins-mini.webp" data-img="./img/coins-mini.png")
+              .bonuses__btn-inner
+                .bonuses__btn-item
+                  a(href="#").bonuses__btn-link.site-btn.site-btn--w
+                    span
+                      span Информация
+                .bonuses__btn-item
+                  a(href="#").bonuses__btn-link.site-btn.site-btn--g
+                    span
+                      span Получить бонус
+
+            .bonuses__raiting
+              .bonuses__raiting-ico
+                img(src="./img/ico/rating-ico.svg" alt="ico" width="39" height="30").bonuses__raiting-ico
+              .bonuses__raiting-txt 9.5/10
+
+          .bonuses__item
+            .bonuses__numb
+              picture
+                source(srcset="./img/ico/num-ico.webp" type="image/webp")
+                source(srcset="./img/ico/num-ico.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="34" height="47" alt="logo").bonuses__name-img-i
+              span 5
+            .bonuses__name
+              .bonuses__name-img
+                picture
+                  source(srcset="./img/fastpay-logo.webp" type="image/webp")
+                  source(srcset="./img/fastpay-logo.png" type="image/png")
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="200" height="46" alt="logo").bonuses__name-img-i
+              .bonuses__name-txt Слотокинг
+
+            .bonuses__table
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Размер бонуса
+                .bonuses__col.bonuses__col-description 1000 грн
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Тип бонуса
+                .bonuses__col.bonuses__col-description бездепозитный
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Эквивалентная сумма
+                .bonuses__col.bonuses__col-description 2500 руб
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Вейджер
+                .bonuses__col.bonuses__col-description x55
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Сумма отыгрыша
+                .bonuses__col.bonuses__col-description 55 000 грн
+
+            .bonuses__btn.webp-img(data-webp="./img/coins-mini.webp" data-img="./img/coins-mini.png")
+              .bonuses__btn-inner
+                .bonuses__btn-item
+                  a(href="#").bonuses__btn-link.site-btn.site-btn--w
+                    span
+                      span Информация
+                .bonuses__btn-item
+                  a(href="#").bonuses__btn-link.site-btn.site-btn--g
+                    span
+                      span Получить бонус
+
+            .bonuses__raiting
+              .bonuses__raiting-ico
+                img(src="./img/ico/rating-ico.svg" alt="ico" width="39" height="30").bonuses__raiting-ico
+              .bonuses__raiting-txt 9.5/10
+
+          .bonuses__item
+            .bonuses__numb
+              picture
+                source(srcset="./img/ico/num-ico.webp" type="image/webp")
+                source(srcset="./img/ico/num-ico.png" type="image/png")
+                img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="34" height="47" alt="logo").bonuses__name-img-i
+              span 6
+            .bonuses__name
+              .bonuses__name-img
+                picture
+                  source(srcset="./img/fastpay-logo.webp" type="image/webp")
+                  source(srcset="./img/fastpay-logo.png" type="image/png")
+                  img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="200" height="46" alt="logo").bonuses__name-img-i
+              .bonuses__name-txt Слотокинг
+
+            .bonuses__table
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Размер бонуса
+                .bonuses__col.bonuses__col-description 1000 грн
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Тип бонуса
+                .bonuses__col.bonuses__col-description бездепозитный
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Эквивалентная сумма
+                .bonuses__col.bonuses__col-description 2500 руб
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Вейджер
+                .bonuses__col.bonuses__col-description x55
+              .bonuses__row
+                .bonuses__col.bonuses__col-name Сумма отыгрыша
+                .bonuses__col.bonuses__col-description 55 000 грн
+
+            .bonuses__btn.webp-img(data-webp="./img/coins-mini.webp" data-img="./img/coins-mini.png")
+              .bonuses__btn-inner
+                .bonuses__btn-item
+                  a(href="#").bonuses__btn-link.site-btn.site-btn--w
+                    span
+                      span Информация
+                .bonuses__btn-item
+                  a(href="#").bonuses__btn-link.site-btn.site-btn--g
+                    span
+                      span Получить бонус
+
+            .bonuses__raiting
+              .bonuses__raiting-ico
+                img(src="./img/ico/rating-ico.svg" alt="ico" width="39" height="30").bonuses__raiting-ico
+              .bonuses__raiting-txt 9.5/10
+
+    .txt-block.txt-block--bg-blue.webp-img(data-webp="./img/text-block-bg.webp" data-img="./img/text-block-bg.png")
+      .txt-block__inner.site-container
         p Когда специалисты определяют рейтинг онлайн казино по выплатам и отзывам, они непременно учитывают содержание предлагаемой в нем бонусной программы. Выбор той или иной игровой площадки игроками тоже во многом определяется содержанием бонусных предложений. Вывод очевиден: бонусы – важная составляющая деятельности любого казино.
         p Раздел Бонусы есть на сайте каждого казино. Прежде чем приступит к игре, посетители изучают классификацию бонусов, условия их предоставления, степень их щедрости и удобство в использовании. Анализ заявленных поощрений дает представление о казино в целом: его финансовой состоятельности, отношении к клиентам и подходах к мотивированию игроков оставаться на сайте.
         p Какие же бонусы анонсируются чаще всего? Все их можно разделить на несколько категорий:
@@ -107,6 +349,10 @@ block content
           li открыть вкладку Регистрация.
           li заполнить ее поля.
           li перейти в личный кабинет.
+        ol
+          li открыть вкладку Регистрация.
+          li заполнить ее поля.
+          li перейти в личный кабинет.
         p Обычно при заполнении регистрационной формы запрашиваются общие сведения об игроке: телефон/e-mail имя(никнейм) и пароль для входа, придуманный клиентом. Остальные данные, без которых невозможно получать выигранные суммы, пользователь заносит в специальный бланк, выложенный в личном кабинете игрока.
         p Пройдя регистрацию, пользователь оказывается в личном кабинете, где подтверждает свое желание получить бездепозитный бонус за регистрацию в казино.
         p Среди предложенных за регистрацию бонусов могут быть конкретные суммы-презенты от казино, бесплатные вращения или сочетание этих поощрений.
@@ -116,5 +362,7 @@ block content
         p Каким бы ни был тип и размер бездепозитного бонуса, поощрение дает отличный шанс приобщиться к игре, стать членом многомиллионного игрового сообщества. Бездеп отлично мотивирует игроков, помогает разобраться в нюансах игрового процесса. Игроки с большим опытом наверняка воспринимают его как еще один шанс в череде многочисленных способов выиграть. Новички же благодаря бездепозитным бонусам знакомятся с азами гемблинга, изучают особенности игры и побеждают внутренний страх перед полноценным игровым процессом.
         p Сыграв по бездепозитному бонусу, многие клиенты казино переходят к игре по реальным ставкам. Полученные знания и опыт они используют для достижения побед в сражениях за крупные выигрыши. Присутствие в бонусной программе бездепозитного вознаграждения – большой плюс к репутации казино и одна из причин, определяющая его рейтинг.
         h3 Не упустите свой шанс получить бездепозитный бонус при регистрации в лучших онлайн казино c выводом!
+        p Тестовая &nbsp;
+          a(href="#") ссылка
 
 

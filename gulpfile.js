@@ -85,7 +85,7 @@ gulp.task('js-libs', () => {
   return gulp.src([
       'node_modules/jquery/dist/jquery.min.js',
       // 'node_modules/aos/dist/aos.js',
-      'node_modules/blazy/blazy.min.js',
+      // 'node_modules/blazy/blazy.min.js',
       // 'node_modules/inputmask/dist/jquery.inputmask.js',
       // 'node_modules/owl.carousel/dist/owl.carousel.js',
       // 'node_modules/swiper/js/swiper.min.js',

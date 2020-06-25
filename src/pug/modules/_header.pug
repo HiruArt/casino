@@ -1,5 +1,5 @@
-header.header
-  .header__inner
+header.header.webp-img(data-webp="./img/h-bg.webp" data-img="./img/h-bg.png")
+  .header__inner.site-container
     .header__logo
       a(href="/").header__logo-link
         picture
@@ -7,14 +7,14 @@ header.header
           source(srcset="./img/Casino.png" type="image/png")
           img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="130" height="35" alt="logo").header__logo-img
 
-    .header__nav
+    .header__nav#header-menu
       .header__nav-list
         .header__nav-item
           a(href="#").header__nav-link.active Бездепозитные бонусы
         .header__nav-item
-          a(href="#").header__nav-link.active Контакты
+          a(href="#").header__nav-link Контакты
 
-    .header__sotial
+    .header__sotial.hide-mobile
       .header__sotial-list
         a(href="#").header__sotial-link.header__sotial--facebook
           img(src="./img/ico/facebook.svg" width="30" alt="facebook")
@@ -22,6 +22,10 @@ header.header
           img(src="./img/ico/youtube.svg" width="30" alt="youtube")
         a(href="#").header__sotial-link.header__sotial--telegram
           img(src="./img/ico/telegram.svg" width="30" alt="telegram")
+
+    .header__mobile-menu.hide-desktop
+      a(href="javascript:void(0);").header__mobile-menu-i#menu-btn
+        img(src="./img/ico/burgger.png" width="22" height="22" alt="facebook")
 
 
 
