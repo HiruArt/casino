@@ -15,6 +15,7 @@ block content
 
     .bonuses.bonuses--game
       .bonuses__inner.site-container
+        h1.bonuses__block-title Fast Pay Casino
         .bonuses__list
           .bonuses__item
             .bonuses__numb
@@ -25,10 +26,10 @@ block content
                   source(srcset="./img/fastpay-logo.webp" type="image/webp")
                   source(srcset="./img/fastpay-logo.png" type="image/png")
                   img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" width="200" height="46" alt="logo").bonuses__name-img-i
-              .bonuses__name-btn
+              .bonuses__name-btn.hide-do-800
                 a(href="#").bonuses__btn-link.site-btn.site-btn--g
                   span
-                    span Получить бонус
+                    span Перейти в казино
 
             .bonuses__table
               .bonuses__row
@@ -54,7 +55,12 @@ block content
                 .bonuses__col.bonuses__col-name Адрес сайта
                 .bonuses__col.bonuses__col-description riobet.com
 
-            .bonuses__bunner
+            .bonuses__name-btn.show-do-800
+              a(href="#").bonuses__btn-link.site-btn.site-btn--g
+                span
+                  span Перейти в казино
+
+            .bonuses__bunner.hide-do-800
               .bonuses__bunner-top
                 .bonuses__bunner-top-txt БОНУСЫ КАЗИНО КЛУБА FASTPAY
               .bonuses__bunner-img
@@ -68,6 +74,15 @@ block content
                 img(src="./img/ico/rating-ico.svg" alt="ico" width="39" height="30").bonuses__raiting-ico
               .bonuses__raiting-txt 9.5/10
 
+
+        .bonuses__bunner.show-do-800
+          .bonuses__bunner-top
+            .bonuses__bunner-top-txt БОНУСЫ КАЗИНО КЛУБА FASTPAY
+          .bonuses__bunner-img
+            picture
+              source(srcset="./img/bunner.webp" type="image/webp")
+              source(srcset="./img/bunner.png" type="image/png")
+              img(src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="bunner").bonuses__bunner-img-i
         p Казино Риобет ведет свою историю с 2014 года. На деятельность казино Риобет имеется лицензия, главный офис учреждения находится в Ирландии. Казино посещают в свободное время игроки из различных стран, сюда относятся страны СНГ, Швеции и Финляндии.
 
     .features.webp-img(data-webp="./img/game-bg.webp" data-img="./img/game-bg.png")
@@ -272,12 +287,14 @@ block content
             .features__name
               img(src="./img/ico/mail.svg" alt="img" width="20").features__ico
               | E-mail
-            .features__description support@riobet.com
+            .features__description
+              a(href="mailto:support@riobet.com") support@riobet.com
           .features__row
             .features__name
               img(src="./img/ico/phone-call.svg" alt="img" width="20").features__ico
               | Телефон
-            .features__description +356 355 000 65
+            .features__description
+              a(href="tel:+35635500065") +356 355 000 65
           .features__row
             .features__name
               img(src="./img/ico/support.svg" alt="img" width="20").features__ico

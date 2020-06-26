@@ -84,6 +84,22 @@ ul, ol, p{
   }
 }
 
+.hide-do-800{
+
+  @include for-800{
+    display: none !important;
+  }
+}
+
+.show-do-800{
+
+  @include from-800{
+    display: none !important;
+  }
+
+
+}
+
 
 .hide-mobile{
 
@@ -269,12 +285,21 @@ p{
   }
 }
 
+h1{
+  color: #1272af;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
 h2{
   color: #1272af;
   font-size: 25px;
   font-weight: 700;
   margin-top: 50px;
   margin-bottom: 30px;
+  letter-spacing: 1px;
 
   display: flex;
   align-items: center;
@@ -299,6 +324,11 @@ ul {
     padding-left: 30px;
     margin-bottom: 13px;
 
+    @include for-768{
+      padding-left: 0;
+    }
+
+
     &:before {
       content: '';
       position: absolute;
@@ -307,6 +337,13 @@ ul {
       width: 14px;
       height: 10px;
       background: url("../img/ico/check.svg") center/contain no-repeat;
+
+      @include for-768{
+        position: relative;
+        display: block;
+        float: left;
+        margin-right: 15px;
+      }
     }
   }
 }
@@ -319,6 +356,10 @@ ol {
     color: #282828;
     padding-left: 30px;
     margin-bottom: 13px;
+
+    @include for-768{
+      padding-left: 0;
+    }
 
 
     counter-increment: step-counter;
@@ -334,6 +375,14 @@ ol {
       top: 0;
       color: #ffba13;
       font-weight: 700;
+
+      @include for-768{
+        position: relative;
+        display: block;
+        float: left;
+        margin-right: 18px;
+      }
+
     }
   }
 }
@@ -588,6 +637,16 @@ ol {
     //padding-bottom: 25px;
   }
 
+  &__block-title{
+
+
+    @include for-576{
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 18px;
+    }
+  }
+
   &__title{
     color: #282828;
     font-size: 25px;
@@ -598,6 +657,10 @@ ol {
   &__list{
     display: flex;
     flex-direction: column;
+
+    @include for-576 {
+      padding-top: 5px;
+    }
   }
 
   &__item{
@@ -663,8 +726,8 @@ ol {
     display: flex;
 
     @include for-800{
-      margin-top: 40px;
-      margin-bottom: 15px;
+      margin-top: 47px;
+      margin-bottom: 8px;
     }
 
     img{
@@ -683,7 +746,7 @@ ol {
     margin-bottom: 30px;
 
     @include for-800{
-      margin-bottom: 0;
+      margin-bottom: -8px;
     }
   }
 
@@ -696,6 +759,7 @@ ol {
 
     @include for-800{
       width: 100%;
+      padding: 20px 10px 10px;
     }
   }
 
@@ -739,6 +803,7 @@ ol {
       flex-direction: column;
       height: auto;
       justify-content: flex-start;
+      margin-bottom: 11px;
     }
   }
 
@@ -761,7 +826,9 @@ ol {
 
     @include for-992{
       width: 100%;
-      padding-top: 3px;
+      //padding-top: 3px;
+            padding-top: 5px;
+            padding-bottom: 2px;
     }
   }
 
@@ -774,7 +841,9 @@ ol {
     @include for-992{
       width: 100%;
       padding-left: 40px;
-      padding-bottom: 3px;
+      //padding-bottom: 3px;
+        padding-top: 2px;
+        padding-bottom: 5px;
     }
 
 
@@ -810,6 +879,7 @@ ol {
       width: 100%;
       background-image: none !important;
       padding: 15px 15px 0;
+      border-radius: 4px;
     }
   }
 
@@ -896,6 +966,11 @@ ol {
     @include for-800{
       width: 100%;
     }
+
+    &.show-do-800{
+      border-radius: 4px;
+      overflow: hidden;
+    }
   }
 
   &__bunner-top{
@@ -911,12 +986,21 @@ ol {
     justify-content: center;
     text-align: center;
     padding: 15px;
+
+    @include for-576{
+      padding-left: 25px;
+      padding-right: 25px;
+    }
   }
 
   &__bunner-img{
     display: flex;
     width: 100%;
     height: 100%;
+
+    picture{
+      width: 100%;
+    }
   }
 
   &__bunner-img-i{
@@ -931,12 +1015,17 @@ ol {
     display: flex;
     justify-content: center;
 
+    &.show-800{
+      padding: 0 10px;
+      margin-bottom: 5px;
+    }
+
   }
 
 
   &--game &__name-img {
-    margin-top: 75px;
-    margin-bottom: 30px;
+    margin-top: 60px;
+    margin-bottom: 17px;
   }
 
   .stars{
@@ -965,6 +1054,23 @@ ol {
 
 
 }
+.homepage .bonuses{
+
+  &__item {
+
+    &:last-child{
+      @include for-992{
+        margin-bottom: 25px;
+      }
+    }
+
+    &:before {
+      @include for-800 {
+        display: none;
+      }
+    }
+  }
+}
 
 .txt-block{
   background-repeat: no-repeat;
@@ -991,6 +1097,21 @@ ol {
     }
   }
 
+}
+.homepage .txt-block{
+  &__inner{
+   @include for-992{
+     padding-top: 10px;
+
+     p{
+       margin: 15px 0;
+
+       &:first-child{
+         margin-top: 10px;
+       }
+     }
+   }
+  }
 }
 
 .features{
@@ -1046,6 +1167,7 @@ ol {
       max-width: 100%;
       flex: auto;
       padding: 3px 15px;
+      min-height: 50px;
     }
   }
 
@@ -1067,6 +1189,9 @@ ol {
 
     @include for-992{
       padding: 3px 15px;
+      min-height: 50px;
+      letter-spacing: 1.28px;
+      line-height: 24px;
     }
 
     img{
@@ -1076,6 +1201,20 @@ ol {
 
       @include for-992{
         margin-right: 4px;
+      }
+    }
+
+    a{
+      font-weight: 700;
+      color: #1272af;
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+      transition: .1s all;
+
+      &:hover{
+        color: #ffb208;
+        text-decoration: underline;
       }
     }
   }
@@ -1092,6 +1231,11 @@ ol {
   &__inner{
     padding-top: 10px;
     padding-bottom: 50px;
+
+
+    @include for-576{
+      padding-bottom: 35px;
+    }
   }
 
   &__content{
@@ -1104,6 +1248,12 @@ ol {
 
     @include for-800{
       overflow: hidden;
+    }
+
+    @include for-576{
+      padding-top: 25px;
+      padding-bottom: 25px;
+
     }
 
     &:before{
@@ -1188,7 +1338,7 @@ ol {
 
   @include for-992{
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
 
   &__top{
@@ -1225,7 +1375,7 @@ ol {
 
     @include for-992{
       flex-direction: column;
-      margin: 10px 0;
+      margin: 10px 0 25px;
     }
   }
 
@@ -1238,9 +1388,12 @@ ol {
     transition: .3s all;
 
     @include for-992{
-      line-height: 28px;
+      line-height: 25px;
       text-align: center;
       justify-content: center;
+      margin-bottom: 7px;
+      letter-spacing: .8px;
+      margin-top: 4px;
     }
 
     &:hover{
@@ -1289,6 +1442,7 @@ ol {
     font-size: 14px;
     color: white;
     line-height: 45px;
+    letter-spacing: 0.8px;
 
     @include for-992{
       text-align: center;
@@ -1313,7 +1467,7 @@ ol {
       height: 27px;
 
       @include for-768{
-        height: 17px;
+        height: 18px;
       }
     }
 
